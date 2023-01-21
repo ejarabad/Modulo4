@@ -2,7 +2,7 @@ import requests
 import time
 from influxdb_client.client.write_api import SYNCHRONOUS
 from influxdb_client import InfluxDBClient, Point
-token = 'SjWhAy_B8v3pWdgppMedbavlKStZQGGRI5Ae5WBsCYdysnip5hasLCicwmpqh_DOEO7DjMsog7cIBx3FyvaB5w=='
+token = 'HI7Bf1mCLsqCjGlpqYMayMHP40aPVf9OquxMwMhtyN2hsfiKLsylI3yjiBvUpzsrNTT86eKrevnUInLttzA9pQ=='
 bucket = 'test'
 client = InfluxDBClient('http://localhost:8086', token = token, org='weather')
 
