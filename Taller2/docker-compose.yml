@@ -8,7 +8,7 @@ services:
       - 8086:8086
     environment:
       - HOST=0.0.0.0
-      - PORT= 8086
+      - PORT= 80:8086
     build: 
       context: .
       dockerfile: influxdb/Dockerfile
@@ -27,7 +27,7 @@ services:
       - 5672:5672
     environment:
       - HOST=0.0.0.0
-      - PORT= 1883
+      - PORT= 80:1883
     build: 
       context: .
       dockerfile: rabbit/Dockerfile
@@ -40,7 +40,7 @@ services:
       - 3000:3000
     environment:
       - HOST=0.0.0.0
-      - PORT= 3000
+      - PORT= 80:3000
     build: 
       context: .
       dockerfile: grafana/Dockerfile
