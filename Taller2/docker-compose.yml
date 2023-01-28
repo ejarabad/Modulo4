@@ -6,6 +6,9 @@ services:
     restart: always
     ports:
       - 8086:8086
+    environment:
+      - HOST=0.0.0.0
+      - PORT= 8086
     build: 
       context: .
       dockerfile: influxdb/Dockerfile
@@ -22,6 +25,9 @@ services:
       - 1883:1883
       - 15672:15672
       - 5672:5672
+    environment:
+      - HOST=0.0.0.0
+      - PORT= 1883
     build: 
       context: .
       dockerfile: rabbit/Dockerfile
@@ -32,6 +38,9 @@ services:
     restart: always
     ports:
       - 3000:3000
+    environment:
+      - HOST=0.0.0.0
+      - PORT= 3000
     build: 
       context: .
       dockerfile: grafana/Dockerfile
