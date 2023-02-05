@@ -8,7 +8,7 @@ datasources:
     jsonData:
       version: Flux
       organization: org
-      defaultBucket: rabbit
+      defaultBucket: RabbitBucket
       tlsSkipVerify: true
     secureJsonData:
       token: token-secreto
